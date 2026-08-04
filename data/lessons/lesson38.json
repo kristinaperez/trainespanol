@@ -1,0 +1,52 @@
+{
+  "lesson": 38,
+  "title": "En camino / salió el curso",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "movement",
+    "school",
+    "past tense"
+  ],
+  "intro": "«В пути» и как записали на курс по готовке.",
+  "authorComment": "«Estoy en camino» — я сразу поняла, что Моника едет ко мне.",
+  "phrases": [
+    {
+      "id": "l38-p1",
+      "spanish": "Estoy en camino",
+      "translation": "Я в пути",
+      "example": "Estoy en camino.",
+      "exampleTranslation": "Я уже еду / в пути.",
+      "notes": "Моника позвонила в 8:40 и сказала так.",
+      "difficulty": "A2",
+      "tags": [
+        "movement"
+      ]
+    },
+    {
+      "id": "l38-p2",
+      "spanish": "Salió este curso",
+      "translation": "Появился этот курс",
+      "example": "Salió este curso que estaba bien.",
+      "exampleTranslation": "Появился курс, который был хороший.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "school",
+        "past tense"
+      ]
+    },
+    {
+      "id": "l38-p3",
+      "spanish": "Te hemos apuntado",
+      "translation": "Мы тебя записали",
+      "example": "Te hemos apuntado.",
+      "exampleTranslation": "Мы тебя записали (на курс).",
+      "notes": "Моника написала, что меня записали на курс по готовке.",
+      "difficulty": "B1",
+      "tags": [
+        "school"
+      ]
+    }
+  ]
+}

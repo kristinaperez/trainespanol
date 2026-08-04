@@ -1,0 +1,38 @@
+{
+  "lesson": 20,
+  "title": "Con quién / me ofrece",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "questions",
+    "verbs"
+  ],
+  "intro": "Удобная связка «с кем...» и глагол предлагать.",
+  "authorComment": "Con quién — универсальная связка для вопросов.",
+  "phrases": [
+    {
+      "id": "l20-p1",
+      "spanish": "¿Con quién?",
+      "translation": "С кем?",
+      "example": "¿Con quién caminas en el parque?",
+      "exampleTranslation": "С кем ты гуляешь в парке?",
+      "notes": "Связка: с кем говоришь, дружишь, идёшь.",
+      "difficulty": "A2",
+      "tags": [
+        "questions"
+      ]
+    },
+    {
+      "id": "l20-p2",
+      "spanish": "Me ofrece",
+      "translation": "Мне предлагает / я предлагаю",
+      "example": "Yo ofrezco usar dos esponjas.",
+      "exampleTranslation": "Я предлагаю использовать две губки.",
+      "notes": "Помогло объяснить соседке про две губки — для тарелок и для сковородок.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    }
+  ]
+}

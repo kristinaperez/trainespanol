@@ -1,0 +1,64 @@
+{
+  "lesson": 25,
+  "title": "Sacar / рассказать о фейле",
+  "category": "Government",
+  "difficulty": "B1",
+  "tags": [
+    "documents",
+    "phone",
+    "verbs"
+  ],
+  "intro": "Вынимать/доставать и как рассказать о неудаче.",
+  "authorComment": "Адриан писал так, когда дозванивался в хостел про мои вещи.",
+  "phrases": [
+    {
+      "id": "l25-p1",
+      "spanish": "Saca tu NIE",
+      "translation": "Достань твой NIE",
+      "example": "Saca tu NIE.",
+      "exampleTranslation": "Достань своё удостоверение (NIE).",
+      "notes": "NIE — внутреннее удостоверение.",
+      "difficulty": "A2",
+      "tags": [
+        "documents"
+      ]
+    },
+    {
+      "id": "l25-p2",
+      "spanish": "Estoy llamando, pero nadie me lo coge",
+      "translation": "Я звоню, но никто не берёт трубку",
+      "example": "Estoy llamando, pero nadie me lo coge.",
+      "exampleTranslation": "Я звоню, но никто не берёт.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "l25-p3",
+      "spanish": "Seguiré intentándolo",
+      "translation": "Я продолжу пробовать",
+      "example": "Seguiré intentándolo ahora y por la mañana.",
+      "exampleTranslation": "Продолжу пробовать сейчас и утром.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "phone",
+        "future"
+      ]
+    },
+    {
+      "id": "l25-p4",
+      "spanish": "En cuanto sepa algo, te escribo",
+      "translation": "Как только узнаю — напишу",
+      "example": "En cuanto sepa algo, te escribo.",
+      "exampleTranslation": "Как только что-то узнаю, напишу тебе.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "future"
+      ]
+    }
+  ]
+}

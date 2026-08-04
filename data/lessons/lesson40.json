@@ -1,0 +1,38 @@
+{
+  "lesson": 40,
+  "title": "Tiene razón / tiene sentido",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "opinion",
+    "idioms"
+  ],
+  "intro": "Иметь правоту (о человеке) и иметь смысл (о ситуации).",
+  "authorComment": "Razón — о точке зрения человека, sentido — о ситуации.",
+  "phrases": [
+    {
+      "id": "l40-p1",
+      "spanish": "Tiene razón",
+      "translation": "Он прав / имеет смысл (точка зрения)",
+      "example": "Tiene razón.",
+      "exampleTranslation": "Он прав.",
+      "notes": "Точка зрения человека имеет смысл.",
+      "difficulty": "B1",
+      "tags": [
+        "opinion"
+      ]
+    },
+    {
+      "id": "l40-p2",
+      "spanish": "Tiene sentido",
+      "translation": "Имеет смысл (ситуация)",
+      "example": "No tiene sentido ir a ese curso.",
+      "exampleTranslation": "Нет смысла идти на этот курс.",
+      "notes": "О ситуации, а не о человеке.",
+      "difficulty": "B1",
+      "tags": [
+        "opinion"
+      ]
+    }
+  ]
+}

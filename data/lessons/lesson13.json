@@ -1,0 +1,38 @@
+{
+  "lesson": 13,
+  "title": "Как передать чужую речь",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "reported speech",
+    "past tense"
+  ],
+  "intro": "Мастер-ключ, чтобы без церемоний пересказывать чужие слова.",
+  "authorComment": "Это освоилось у меня на пятом месяце в Испании — топовая разговорная фраза.",
+  "phrases": [
+    {
+      "id": "l13-p1",
+      "spanish": "Ella me ha dicho que",
+      "translation": "Она мне сказала, что",
+      "example": "Ella me ha dicho que viene.",
+      "exampleTranslation": "Она сказала мне, что придёт.",
+      "notes": "Мастер-ключ для пересказа чужой речи.",
+      "difficulty": "B1",
+      "tags": [
+        "reported speech"
+      ]
+    },
+    {
+      "id": "l13-p2",
+      "spanish": "Me han dicho que",
+      "translation": "Мне сказали, что",
+      "example": "Me han dicho que está cerrado.",
+      "exampleTranslation": "Мне сказали, что закрыто.",
+      "notes": "Про группу людей — «они мне сказали».",
+      "difficulty": "B1",
+      "tags": [
+        "reported speech"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lesson": 7,
+  "title": "Sientate + прошедшее",
+  "category": "Police",
+  "difficulty": "A2",
+  "tags": [
+    "commands",
+    "past tense",
+    "police"
+  ],
+  "intro": "Громкая фраза от полиции и первые формы прошедшего времени.",
+  "authorComment": "«Siéntate» я чётко услышала в полицейском участке в аэропорту.",
+  "phrases": [
+    {
+      "id": "l7-p1",
+      "spanish": "Siéntate",
+      "translation": "Сядь",
+      "example": "¡Siéntate!",
+      "exampleTranslation": "Сядьте!",
+      "notes": "Громкая и чёткая фраза от полиции.",
+      "difficulty": "A1",
+      "tags": [
+        "commands",
+        "police"
+      ]
+    },
+    {
+      "id": "l7-p2",
+      "spanish": "Yo no sabía",
+      "translation": "Я не знала",
+      "example": "Yo no sabía.",
+      "exampleTranslation": "Я не знала.",
+      "notes": "Прошедшее время (imperfecto).",
+      "difficulty": "A2",
+      "tags": [
+        "past tense"
+      ]
+    },
+    {
+      "id": "l7-p3",
+      "spanish": "Yo estaba",
+      "translation": "Я была",
+      "example": "Yo estaba.",
+      "exampleTranslation": "Я была (где-то).",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "past tense"
+      ]
+    },
+    {
+      "id": "l7-p4",
+      "spanish": "Yo pensaba",
+      "translation": "Я думала",
+      "example": "Yo pensaba.",
+      "exampleTranslation": "Я думала.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "past tense"
+      ]
+    },
+    {
+      "id": "l7-p5",
+      "spanish": "Yo tenía",
+      "translation": "Я имела",
+      "example": "Yo tenía.",
+      "exampleTranslation": "У меня было.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "past tense"
+      ]
+    }
+  ]
+}

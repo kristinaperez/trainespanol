@@ -1,0 +1,39 @@
+{
+  "lesson": 19,
+  "title": "Acuerdas / acuérdate",
+  "category": "School",
+  "difficulty": "A2",
+  "tags": [
+    "verbs",
+    "memory"
+  ],
+  "intro": "Помнить и «запомни».",
+  "authorComment": "Аналогично «tú recuerdas».",
+  "phrases": [
+    {
+      "id": "l19-p1",
+      "spanish": "¿Tú acuerdas?",
+      "translation": "Ты помнишь?",
+      "example": "¿Tú te acuerdas?",
+      "exampleTranslation": "Ты помнишь?",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "memory"
+      ]
+    },
+    {
+      "id": "l19-p2",
+      "spanish": "Acuérdate",
+      "translation": "Запомни / вспомни",
+      "example": "Acuérdate a las 6.",
+      "exampleTranslation": "Запомни: в 6.",
+      "notes": "Эриола: сегодня в 6 надо вернуться в школу Sopena.",
+      "difficulty": "A2",
+      "tags": [
+        "memory",
+        "school"
+      ]
+    }
+  ]
+}

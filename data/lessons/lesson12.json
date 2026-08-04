@@ -1,0 +1,51 @@
+{
+  "lesson": 12,
+  "title": "Dentro / fuera",
+  "category": "Housing",
+  "difficulty": "A1",
+  "tags": [
+    "prepositions",
+    "housing"
+  ],
+  "intro": "Простые слова «внутри» и «снаружи» облегчают массу ситуаций.",
+  "authorComment": "Базовые, частые выражения по дому.",
+  "phrases": [
+    {
+      "id": "l12-p1",
+      "spanish": "Dentro",
+      "translation": "Внутри",
+      "example": "Está dentro.",
+      "exampleTranslation": "Это внутри.",
+      "notes": "",
+      "difficulty": "A1",
+      "tags": [
+        "prepositions"
+      ]
+    },
+    {
+      "id": "l12-p2",
+      "spanish": "Fuera",
+      "translation": "Снаружи",
+      "example": "Está fuera.",
+      "exampleTranslation": "Это снаружи.",
+      "notes": "",
+      "difficulty": "A1",
+      "tags": [
+        "prepositions"
+      ]
+    },
+    {
+      "id": "l12-p3",
+      "spanish": "Tirar la basura",
+      "translation": "Выбросить мусор",
+      "example": "Si no lo usáis, lo tiráis.",
+      "exampleTranslation": "Если вы это не используете — выбросьте.",
+      "notes": "Базовое частое выражение.",
+      "difficulty": "A1",
+      "tags": [
+        "housing",
+        "chores"
+      ]
+    }
+  ]
+}

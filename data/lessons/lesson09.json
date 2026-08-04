@@ -1,0 +1,39 @@
+{
+  "lesson": 9,
+  "title": "Pide — просить",
+  "category": "Social Worker",
+  "difficulty": "A2",
+  "tags": [
+    "verbs",
+    "requests"
+  ],
+  "intro": "Глагол pedir/pide — просить.",
+  "authorComment": "Это слово долго меня мучало, наконец закрепилось.",
+  "phrases": [
+    {
+      "id": "l9-p1",
+      "spanish": "Tú siempre pides hablar",
+      "translation": "Ты всё время просишься говорить",
+      "example": "Tú siempre pides hablar.",
+      "exampleTranslation": "Ты постоянно просишь дать тебе говорить.",
+      "notes": "Учитель Хорхе напоминал мне на уроках.",
+      "difficulty": "A2",
+      "tags": [
+        "requests"
+      ]
+    },
+    {
+      "id": "l9-p2",
+      "spanish": "¿Necesito pedir una cita con traductor?",
+      "translation": "Нужно назначить встречу с переводчиком?",
+      "example": "¿Necesito pedir una cita con traductor?",
+      "exampleTranslation": "Нам нужна встреча с переводчиком?",
+      "notes": "Психолог спросил на встрече.",
+      "difficulty": "B1",
+      "tags": [
+        "requests",
+        "appointments"
+      ]
+    }
+  ]
+}

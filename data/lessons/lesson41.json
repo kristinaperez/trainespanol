@@ -1,0 +1,40 @@
+{
+  "lesson": 41,
+  "title": "Me dejan / me dejas",
+  "category": "Shopping",
+  "difficulty": "B1",
+  "tags": [
+    "verbs",
+    "documents",
+    "shopping"
+  ],
+  "intro": "Оставить меня без чего-то и «оставь мне» документ.",
+  "authorComment": "В одном случае «оставили меня...», в другом «оставь мне».",
+  "phrases": [
+    {
+      "id": "l41-p1",
+      "spanish": "Me dejan sin bizcocho",
+      "translation": "Меня оставили без бисквита",
+      "example": "Me dejan sin bizcocho.",
+      "exampleTranslation": "Меня оставили без бисквита.",
+      "notes": "Росси прибежала на курсах по кухне.",
+      "difficulty": "B1",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "l41-p2",
+      "spanish": "Me dejas tu DNI",
+      "translation": "Оставь мне твой документ",
+      "example": "¿Me dejas tu DNI?",
+      "exampleTranslation": "Оставь мне твой ДНИ (удостоверение).",
+      "notes": "Кассир в магазине просит удостоверение.",
+      "difficulty": "B1",
+      "tags": [
+        "documents",
+        "shopping"
+      ]
+    }
+  ]
+}

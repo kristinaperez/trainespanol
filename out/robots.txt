@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://espanol-real.example/sitemap.xml

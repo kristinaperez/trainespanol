@@ -1,0 +1,50 @@
+{
+  "lesson": 15,
+  "title": "Me apuntas / me avisas",
+  "category": "School",
+  "difficulty": "A2",
+  "tags": [
+    "school",
+    "pronouns"
+  ],
+  "intro": "Записать и сообщить — с разных сторон.",
+  "authorComment": "«Me avisas» звучит официальнее, чем «me cuentas».",
+  "phrases": [
+    {
+      "id": "l15-p1",
+      "spanish": "¿Me apuntas?",
+      "translation": "Запишешь меня?",
+      "example": "¿Me apuntas?",
+      "exampleTranslation": "Запишешь меня (в список)?",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "school"
+      ]
+    },
+    {
+      "id": "l15-p2",
+      "spanish": "Yo te apunto",
+      "translation": "Я тебя запишу",
+      "example": "Yo te apunto.",
+      "exampleTranslation": "Я тебя запишу.",
+      "notes": "Ответственный за группу, если участник выходит.",
+      "difficulty": "A2",
+      "tags": [
+        "school"
+      ]
+    },
+    {
+      "id": "l15-p3",
+      "spanish": "Me avisas",
+      "translation": "Сообщишь мне",
+      "example": "Me avisas.",
+      "exampleTranslation": "Сообщи мне.",
+      "notes": "То же, что me cuentas, но официальнее.",
+      "difficulty": "A2",
+      "tags": [
+        "pronouns"
+      ]
+    }
+  ]
+}

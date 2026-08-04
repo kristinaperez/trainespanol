@@ -1,0 +1,51 @@
+{
+  "lesson": 36,
+  "title": "Me sujetas / había / a pie",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "verbs",
+    "past tense",
+    "transport"
+  ],
+  "intro": "Придержать, «было много людей», «пешком занимает».",
+  "authorComment": "Если делаете ремонт — скажете «me sujetas».",
+  "phrases": [
+    {
+      "id": "l36-p1",
+      "spanish": "Me sujetas",
+      "translation": "Придержи здесь",
+      "example": "¿Me sujetas?",
+      "exampleTranslation": "Придержишь здесь?",
+      "notes": "При ремонте — попросить друга придержать.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "l36-p2",
+      "spanish": "Había mucha gente",
+      "translation": "Было много людей",
+      "example": "Había mucha gente.",
+      "exampleTranslation": "Было много народу.",
+      "notes": "Прошедшее время (había).",
+      "difficulty": "B1",
+      "tags": [
+        "past tense"
+      ]
+    },
+    {
+      "id": "l36-p3",
+      "spanish": "A pie se tarda 10 minutos",
+      "translation": "Пешком занимает 10 минут",
+      "example": "A pie se tarda 10 minutos.",
+      "exampleTranslation": "Пешком это 10 минут.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "transport"
+      ]
+    }
+  ]
+}

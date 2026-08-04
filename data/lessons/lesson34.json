@@ -1,0 +1,40 @@
+{
+  "lesson": 34,
+  "title": "Lo que importa",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "grammar",
+    "lo"
+  ],
+  "intro": "Крутой апгрейд: научиться использовать «lo».",
+  "authorComment": "Мы говорим через «que», но носителям нужно добавить «lo».",
+  "phrases": [
+    {
+      "id": "l34-p1",
+      "spanish": "¿Sabes lo que importa?",
+      "translation": "Знаешь, что важно?",
+      "example": "¿Sabes lo que importa?",
+      "exampleTranslation": "Знаешь, что действительно важно?",
+      "notes": "«Lo que» = «то, что».",
+      "difficulty": "B1",
+      "tags": [
+        "lo",
+        "grammar"
+      ]
+    },
+    {
+      "id": "l34-p2",
+      "spanish": "Eso es lo que importa",
+      "translation": "Вот что важно",
+      "example": "Eso es lo que importa.",
+      "exampleTranslation": "Вот это и важно.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "lo",
+        "grammar"
+      ]
+    }
+  ]
+}

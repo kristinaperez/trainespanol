@@ -1,0 +1,26 @@
+{
+  "lesson": 43,
+  "title": "Me pega mucho",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "idioms",
+    "feelings"
+  ],
+  "intro": "Фраза об усталости.",
+  "authorComment": "Валерия говорит так, когда сильно устала.",
+  "phrases": [
+    {
+      "id": "l43-p1",
+      "spanish": "Me pega mucho",
+      "translation": "Меня сильно накрывает (усталость)",
+      "example": "Me pega mucho.",
+      "exampleTranslation": "Меня сильно вырубает / накрывает.",
+      "notes": "Когда сильно устала.",
+      "difficulty": "A2",
+      "tags": [
+        "feelings"
+      ]
+    }
+  ]
+}

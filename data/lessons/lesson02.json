@@ -1,0 +1,77 @@
+{
+  "lesson": 2,
+  "title": "Типичные фразы",
+  "category": "Daily Life",
+  "difficulty": "A1",
+  "tags": [
+    "fillers",
+    "verbs",
+    "daily life"
+  ],
+  "intro": "Типичные разговорные фразы, которые слышишь постоянно.",
+  "authorComment": "«Vale» и «luego» — слова-чемпионы по частоте.",
+  "phrases": [
+    {
+      "id": "l2-p1",
+      "spanish": "Vale",
+      "translation": "Хорошо / Ок",
+      "example": "Quiero comprar zumo, vale.",
+      "exampleTranslation": "Я хочу купить сок, окей.",
+      "notes": "Может быть итогом разговора, а могут добавлять в конец каждой фразы.",
+      "difficulty": "A1",
+      "tags": [
+        "fillers"
+      ]
+    },
+    {
+      "id": "l2-p2",
+      "spanish": "Luego",
+      "translation": "Потом / позже",
+      "example": "Luego llamo y te escribo.",
+      "exampleTranslation": "Потом позвоню и напишу тебе.",
+      "notes": "Очень характерно, может употребляться отдельно: «Когда доделаешь? — Luego».",
+      "difficulty": "A1",
+      "tags": [
+        "time",
+        "fillers"
+      ]
+    },
+    {
+      "id": "l2-p3",
+      "spanish": "Marchar",
+      "translation": "Идти, выходить",
+      "example": "Vosotros vais a marchar.",
+      "exampleTranslation": "Вы уже выходите.",
+      "notes": "Se marcha — уходят, также маршируют на фиесту.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs",
+        "movement"
+      ]
+    },
+    {
+      "id": "l2-p4",
+      "spanish": "Probar",
+      "translation": "Пробовать",
+      "example": "Quiero probar un examen.",
+      "exampleTranslation": "Хочу попробовать (сдать) экзамен.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "l2-p5",
+      "spanish": "Inténtalo",
+      "translation": "Попробуй (ещё раз)",
+      "example": "Inténtalo.",
+      "exampleTranslation": "Попробуй ещё раз.",
+      "notes": "Настаивать, пробовать повторно.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "lesson": 27,
+  "title": "Guardar — хранить/отложить",
+  "category": "Restaurant",
+  "difficulty": "A2",
+  "tags": [
+    "verbs",
+    "daily life"
+  ],
+  "intro": "С глаголом guardar много ситуаций.",
+  "authorComment": "Хранить, беречь, отложить, присмотреть.",
+  "phrases": [
+    {
+      "id": "l27-p1",
+      "spanish": "Guarda mi comida",
+      "translation": "Отложите мою еду",
+      "example": "Guarda mi comida.",
+      "exampleTranslation": "Отложите мою еду (в хостеле).",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "restaurant"
+      ]
+    },
+    {
+      "id": "l27-p2",
+      "spanish": "Guárdalo",
+      "translation": "Сохрани это",
+      "example": "Guárdalo.",
+      "exampleTranslation": "Сохрани это.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l27-p3",
+      "spanish": "Guarda mi ordenador",
+      "translation": "Присмотри за моим ноутбуком",
+      "example": "¿Me guardas el ordenador?",
+      "exampleTranslation": "Присмотришь за ноутбуком?",
+      "notes": "Обратиться к соседу в Макдональдсе, если надо отойти.",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    }
+  ]
+}

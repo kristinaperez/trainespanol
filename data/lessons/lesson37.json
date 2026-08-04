@@ -1,0 +1,50 @@
+{
+  "lesson": 37,
+  "title": "Llevo + герундий",
+  "category": "Daily Life",
+  "difficulty": "B1",
+  "tags": [
+    "grammar",
+    "verbs"
+  ],
+  "intro": "Конструкция llevo + герундий, чтобы звучать как носитель.",
+  "authorComment": "Со всеми длящимися глаголами можно употреблять llevo.",
+  "phrases": [
+    {
+      "id": "l37-p1",
+      "spanish": "Llevo esperando",
+      "translation": "Я уже жду (какое-то время)",
+      "example": "Llevo esperando media hora.",
+      "exampleTranslation": "Я жду уже полчаса.",
+      "notes": "Я прождал и всё ещё жду.",
+      "difficulty": "B1",
+      "tags": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "l37-p2",
+      "spanish": "Llevo trabajando todo el día",
+      "translation": "Я работаю весь день",
+      "example": "Llevo trabajando todo el día.",
+      "exampleTranslation": "Я работаю уже весь день.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "l37-p3",
+      "spanish": "Llevo viviendo aquí 10 años",
+      "translation": "Я живу здесь 10 лет",
+      "example": "Llevo viviendo aquí 10 años.",
+      "exampleTranslation": "Я живу здесь уже 10 лет.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "grammar"
+      ]
+    }
+  ]
+}

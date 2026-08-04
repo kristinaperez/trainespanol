@@ -1,0 +1,38 @@
+{
+  "lesson": 30,
+  "title": "Произношение окончаний",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "pronunciation",
+    "grammar"
+  ],
+  "intro": "Отличие испанского от русского: важно чётко выговаривать окончания слов.",
+  "authorComment": "Не тот звук — a или o — поменяет «я» на «она».",
+  "phrases": [
+    {
+      "id": "l30-p1",
+      "spanish": "Yo hablo",
+      "translation": "Я говорю",
+      "example": "Yo hablo español.",
+      "exampleTranslation": "Я говорю по-испански.",
+      "notes": "Окончание -o = «я».",
+      "difficulty": "A1",
+      "tags": [
+        "pronunciation"
+      ]
+    },
+    {
+      "id": "l30-p2",
+      "spanish": "Ella habla",
+      "translation": "Она говорит",
+      "example": "Ella habla español.",
+      "exampleTranslation": "Она говорит по-испански.",
+      "notes": "Окончание -a = «она». Чётко выговаривайте окончание.",
+      "difficulty": "A1",
+      "tags": [
+        "pronunciation"
+      ]
+    }
+  ]
+}

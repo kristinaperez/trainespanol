@@ -1,0 +1,50 @@
+{
+  "lesson": 35,
+  "title": "Puede ser / ser + кто-то",
+  "category": "Work",
+  "difficulty": "B1",
+  "tags": [
+    "work",
+    "verbs"
+  ],
+  "intro": "Выражения для темы трудоустройства и объяснений с соцработниками.",
+  "authorComment": "«Puede ser» хорошо вставлять, когда не уверен.",
+  "phrases": [
+    {
+      "id": "l35-p1",
+      "spanish": "Puede ser",
+      "translation": "Может быть",
+      "example": "Puede ser.",
+      "exampleTranslation": "Может быть.",
+      "notes": "Вставлять, когда не уверены.",
+      "difficulty": "A2",
+      "tags": [
+        "fillers"
+      ]
+    },
+    {
+      "id": "l35-p2",
+      "spanish": "Ser mujer",
+      "translation": "Быть женщиной",
+      "example": "Ser mujer.",
+      "exampleTranslation": "Быть женщиной.",
+      "notes": "Ser + кто-то.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "l35-p3",
+      "spanish": "Roto",
+      "translation": "Сломан",
+      "example": "Tengo la mano rota.",
+      "exampleTranslation": "У меня сломана рука.",
+      "notes": "Своя специфика при рассказе о себе.",
+      "difficulty": "A2",
+      "tags": [
+        "health"
+      ]
+    }
+  ]
+}

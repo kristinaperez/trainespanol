@@ -1,0 +1,38 @@
+{
+  "lesson": 26,
+  "title": "Me cobras / me coincide",
+  "category": "Restaurant",
+  "difficulty": "A2",
+  "tags": [
+    "restaurant",
+    "verbs"
+  ],
+  "intro": "Рассчитаться в кафе и «совпадает».",
+  "authorComment": "Полезно в кафе и при планировании расписания.",
+  "phrases": [
+    {
+      "id": "l26-p1",
+      "spanish": "Me cobras",
+      "translation": "Рассчитайте меня",
+      "example": "¿Me cobras?",
+      "exampleTranslation": "Можно счёт / рассчитайте меня?",
+      "notes": "В кафе.",
+      "difficulty": "A2",
+      "tags": [
+        "restaurant"
+      ]
+    },
+    {
+      "id": "l26-p2",
+      "spanish": "Me coincide",
+      "translation": "У меня совпадает",
+      "example": "Me coincide con las clases.",
+      "exampleTranslation": "У меня это совпадает с занятиями.",
+      "notes": "Расписание курсов совпадает со школой.",
+      "difficulty": "A2",
+      "tags": [
+        "time"
+      ]
+    }
+  ]
+}

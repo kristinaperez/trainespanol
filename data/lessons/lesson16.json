@@ -1,0 +1,39 @@
+{
+  "lesson": 16,
+  "title": "Bajar / subir (автобус)",
+  "category": "Transport",
+  "difficulty": "A2",
+  "tags": [
+    "transport",
+    "verbs",
+    "movement"
+  ],
+  "intro": "Входить и выходить из транспорта.",
+  "authorComment": "Bajar — спускаться, subir — подниматься.",
+  "phrases": [
+    {
+      "id": "l16-p1",
+      "spanish": "Me bajo",
+      "translation": "Я выхожу (из автобуса)",
+      "example": "Me bajo aquí.",
+      "exampleTranslation": "Я выхожу здесь.",
+      "notes": "Выходить из автобуса.",
+      "difficulty": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "l16-p2",
+      "spanish": "Me subo al autobús",
+      "translation": "Я захожу в автобус",
+      "example": "Me subo al autobús.",
+      "exampleTranslation": "Я сажусь в автобус.",
+      "notes": "Me subo al coche — сажусь в машину.",
+      "difficulty": "A2",
+      "tags": [
+        "transport"
+      ]
+    }
+  ]
+}

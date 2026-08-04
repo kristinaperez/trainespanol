@@ -1,0 +1,39 @@
+{
+  "lesson": 45,
+  "title": "Te sientes identificada / se me quema",
+  "category": "Doctor",
+  "difficulty": "B1",
+  "tags": [
+    "feelings",
+    "verbs",
+    "doctor"
+  ],
+  "intro": "Финальный урок: об уверенности в своих словах и «у меня подгорает».",
+  "authorComment": "После я на улице спрашивала испанцев, что это значит — не все смогли ответить.",
+  "phrases": [
+    {
+      "id": "l45-p1",
+      "spanish": "¿Te sientes identificada con lo que dices?",
+      "translation": "Ты уверена в том, что говоришь?",
+      "example": "¿Tú te sientes identificada con lo que dices?",
+      "exampleTranslation": "Ты отождествляешь себя с тем, что говоришь?",
+      "notes": "Моника спросила на приёме.",
+      "difficulty": "B1",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "id": "l45-p2",
+      "spanish": "Se me quema",
+      "translation": "У меня подгорает",
+      "example": "Se me quema en el horno.",
+      "exampleTranslation": "У меня подгорает в духовке.",
+      "notes": "Лера сказала, когда подгорело.",
+      "difficulty": "B1",
+      "tags": [
+        "cooking"
+      ]
+    }
+  ]
+}

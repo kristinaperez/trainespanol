@@ -1,0 +1,52 @@
+{
+  "lesson": 3,
+  "title": "То, что не использую, но существует",
+  "category": "School",
+  "difficulty": "A1",
+  "tags": [
+    "pronouns",
+    "daily life"
+  ],
+  "intro": "Фразы, которые пригодятся, даже если сам их пока не используешь.",
+  "authorComment": "Снова местоимение уходит в начало фразы.",
+  "phrases": [
+    {
+      "id": "l3-p1",
+      "spanish": "Me prestas",
+      "translation": "Одолжи мне",
+      "example": "¿Me prestas un boli?",
+      "exampleTranslation": "Одолжишь мне ручку?",
+      "notes": "На занятии нет ручки — спросить у соседа.",
+      "difficulty": "A1",
+      "tags": [
+        "school",
+        "pronouns"
+      ]
+    },
+    {
+      "id": "l3-p2",
+      "spanish": "Me pillas",
+      "translation": "Ты меня застал(а)",
+      "example": "Ahora me pillas ocupado.",
+      "exampleTranslation": "Сейчас ты меня застал занятым.",
+      "notes": "Зовёте гулять, а знакомый занят.",
+      "difficulty": "A2",
+      "tags": [
+        "pronouns",
+        "daily life"
+      ]
+    },
+    {
+      "id": "l3-p3",
+      "spanish": "Me coges",
+      "translation": "Забери меня",
+      "example": "¿Me coges?",
+      "exampleTranslation": "Заберёшь меня к себе?",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "pronouns"
+      ]
+    }
+  ]
+}

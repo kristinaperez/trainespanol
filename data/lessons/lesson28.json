@@ -1,0 +1,40 @@
+{
+  "lesson": 28,
+  "title": "Te servirá / responderé",
+  "category": "Work",
+  "difficulty": "B1",
+  "tags": [
+    "work",
+    "future",
+    "verbs"
+  ],
+  "intro": "Полезные конструкции про помощь и будущее.",
+  "authorComment": "Прошедшее и будущее я учила по ситуациям, добавляя окончания -aba или -é.",
+  "phrases": [
+    {
+      "id": "l28-p1",
+      "spanish": "Este teléfono te servirá",
+      "translation": "Этот телефон тебе поможет",
+      "example": "Necesitas cualquier cosa, este teléfono te servirá.",
+      "exampleTranslation": "Понадобится что угодно — этот телефон поможет.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "l28-p2",
+      "spanish": "No me respondió, pero responderé",
+      "translation": "Мне не ответили, но я отвечу",
+      "example": "No me respondió, pero responderé.",
+      "exampleTranslation": "Мне не ответили, но я отвечу.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "future",
+        "past tense"
+      ]
+    }
+  ]
+}

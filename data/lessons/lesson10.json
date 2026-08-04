@@ -1,0 +1,63 @@
+{
+  "lesson": 10,
+  "title": "Conocido, sabes, siesta, fiesta",
+  "category": "Daily Life",
+  "difficulty": "A1",
+  "tags": [
+    "daily life",
+    "fillers",
+    "culture"
+  ],
+  "intro": "Знакомые люди и популярные (но не всегда полезные) слова.",
+  "authorComment": "«Sabes» — слово-паразит, чтобы звучать натуральнее.",
+  "phrases": [
+    {
+      "id": "l10-p1",
+      "spanish": "Conocido",
+      "translation": "Знакомый / знакомые",
+      "example": "¿Hay alguien conocido contigo?",
+      "exampleTranslation": "С тобой есть кто-то знакомый?",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "l10-p2",
+      "spanish": "¿Sabes?",
+      "translation": "Знаешь?",
+      "example": "Me gustan las patatas, ¿sabes?",
+      "exampleTranslation": "Мне нравится картошка, знаешь?",
+      "notes": "Слово-паразит, можно вставлять везде.",
+      "difficulty": "A1",
+      "tags": [
+        "fillers"
+      ]
+    },
+    {
+      "id": "l10-p3",
+      "spanish": "Siesta",
+      "translation": "Сиеста (послеобеденный отдых)",
+      "example": "¿Tienes siesta después de comida?",
+      "exampleTranslation": "У тебя есть сиеста после еды?",
+      "notes": "«Esto es bien para el cerebro».",
+      "difficulty": "A1",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "id": "l10-p4",
+      "spanish": "Fiesta",
+      "translation": "Праздник, выходные",
+      "example": "En octubre Zaragoza tiene muchas fiestas.",
+      "exampleTranslation": "В октябре в Сарагосе много праздников.",
+      "notes": "",
+      "difficulty": "A1",
+      "tags": [
+        "culture"
+      ]
+    }
+  ]
+}

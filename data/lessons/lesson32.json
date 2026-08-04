@@ -1,0 +1,50 @@
+{
+  "lesson": 32,
+  "title": "Te falta — тебе не хватает",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "verbs",
+    "daily life"
+  ],
+  "intro": "Конструкция «te falta» — тебе не хватает / ты хочешь ещё.",
+  "authorComment": "Соседка спросила ночью, когда я читала, а она хотела спать.",
+  "phrases": [
+    {
+      "id": "l32-p1",
+      "spanish": "¿Te falta más?",
+      "translation": "Ты хочешь ещё? / Тебе ещё долго?",
+      "example": "¿Te falta más?",
+      "exampleTranslation": "Тебе ещё много осталось?",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l32-p2",
+      "spanish": "Te falta café",
+      "translation": "Тебе не хватает кофе",
+      "example": "Te falta café.",
+      "exampleTranslation": "Тебе не хватает кофе (ты ещё сонный).",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l32-p3",
+      "spanish": "Te falta paciencia",
+      "translation": "Тебе не хватает терпения",
+      "example": "Te falta paciencia.",
+      "exampleTranslation": "Тебе не хватает терпения.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    }
+  ]
+}

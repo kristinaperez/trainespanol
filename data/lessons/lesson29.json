@@ -1,0 +1,51 @@
+{
+  "lesson": 29,
+  "title": "Venga / cambiar / qué ocurre",
+  "category": "Work",
+  "difficulty": "A2",
+  "tags": [
+    "work",
+    "verbs",
+    "questions"
+  ],
+  "intro": "Позвать, менять, и что происходит.",
+  "authorComment": "«Cambiar» — очень частое слово.",
+  "phrases": [
+    {
+      "id": "l29-p1",
+      "spanish": "Venga",
+      "translation": "Иди сюда / давай",
+      "example": "¡Venga!",
+      "exampleTranslation": "Давай, иди сюда!",
+      "notes": "Когда надо позвать кого-то.",
+      "difficulty": "A1",
+      "tags": [
+        "commands"
+      ]
+    },
+    {
+      "id": "l29-p2",
+      "spanish": "Cambiar",
+      "translation": "Менять / изменять",
+      "example": "Quiero cambiar mi horario de trabajo.",
+      "exampleTranslation": "Хочу поменять свой рабочий график.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "l29-p3",
+      "spanish": "¿Qué ocurre?",
+      "translation": "Что происходит?",
+      "example": "¿Qué ocurre?",
+      "exampleTranslation": "Что происходит?",
+      "notes": "Другой способ сказать «¿Qué pasó?».",
+      "difficulty": "A2",
+      "tags": [
+        "questions"
+      ]
+    }
+  ]
+}

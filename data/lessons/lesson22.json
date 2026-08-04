@@ -1,0 +1,41 @@
+{
+  "lesson": 22,
+  "title": "Más o menos / ha ido y vuelto",
+  "category": "Transport",
+  "difficulty": "A2",
+  "tags": [
+    "fillers",
+    "quantity",
+    "transport"
+  ],
+  "intro": "Универсальное «más o menos» и «туда-обратно».",
+  "authorComment": "По частоте, наверное, второе место после «vale».",
+  "phrases": [
+    {
+      "id": "l22-p1",
+      "spanish": "Más o menos",
+      "translation": "Более-менее",
+      "example": "¿Cómo estás? — Más o menos.",
+      "exampleTranslation": "Как ты? — Более-менее.",
+      "notes": "Можно очень многое выразить: «más o menos 2 kilos».",
+      "difficulty": "A1",
+      "tags": [
+        "fillers",
+        "quantity"
+      ]
+    },
+    {
+      "id": "l22-p2",
+      "spanish": "Ha ido y ha vuelto",
+      "translation": "Съездил туда и обратно",
+      "example": "El autobús ha ido y ha vuelto.",
+      "exampleTranslation": "Автобус съездил туда и обратно.",
+      "notes": "Часто при вопросе про дорогу в автобусе.",
+      "difficulty": "B1",
+      "tags": [
+        "transport",
+        "past tense"
+      ]
+    }
+  ]
+}

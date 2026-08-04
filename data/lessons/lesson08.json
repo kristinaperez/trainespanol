@@ -1,0 +1,88 @@
+{
+  "lesson": 8,
+  "title": "Hecho, apetece, sigue",
+  "category": "School",
+  "difficulty": "A2",
+  "tags": [
+    "verbs",
+    "participle",
+    "school"
+  ],
+  "intro": "Причастие hecho и полезный глагол seguir.",
+  "authorComment": "Sigue — аналог английского Continue.",
+  "phrases": [
+    {
+      "id": "l8-p1",
+      "spanish": "Mal hecho",
+      "translation": "Плохо сделано",
+      "example": "Mal hecho.",
+      "exampleTranslation": "Ты поступил плохо.",
+      "notes": "Чаще говорят, чтобы сказать, что кто-то поступил плохо.",
+      "difficulty": "A2",
+      "tags": [
+        "participle"
+      ]
+    },
+    {
+      "id": "l8-p2",
+      "spanish": "Bien hecho",
+      "translation": "Хорошо сделано",
+      "example": "Bien hecho.",
+      "exampleTranslation": "Молодец / хорошо сделано.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "participle"
+      ]
+    },
+    {
+      "id": "l8-p3",
+      "spanish": "Me apetece",
+      "translation": "Мне хочется / нравится",
+      "example": "Me apetece.",
+      "exampleTranslation": "Мне это по душе.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "opinion"
+      ]
+    },
+    {
+      "id": "l8-p4",
+      "spanish": "Sigue",
+      "translation": "Продолжай",
+      "example": "¡Sigue!",
+      "exampleTranslation": "Продолжай!",
+      "notes": "Аналог Continue. Обычно побуждение.",
+      "difficulty": "A1",
+      "tags": [
+        "verbs",
+        "school"
+      ]
+    },
+    {
+      "id": "l8-p5",
+      "spanish": "Seguimos",
+      "translation": "Продолжаем",
+      "example": "Seguimos.",
+      "exampleTranslation": "Продолжаем.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "l8-p6",
+      "spanish": "Siguiente",
+      "translation": "Следующий",
+      "example": "Lee lo siguiente.",
+      "exampleTranslation": "Прочитай следующее.",
+      "notes": "Преподаватель: siguiente — прочитай следующее предложение.",
+      "difficulty": "A2",
+      "tags": [
+        "school"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "lesson": 23,
+  "title": "Arreglar — исправить",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "verbs"
+  ],
+  "intro": "Заровнять, исправить, уладить.",
+  "authorComment": "Но «arregla tu cara» говорят сердитому человеку.",
+  "phrases": [
+    {
+      "id": "l23-p1",
+      "spanish": "Arreglar",
+      "translation": "Исправить / уладить",
+      "example": "¿Cómo podemos arreglarlo?",
+      "exampleTranslation": "Как мы можем это уладить?",
+      "notes": "Моника использовала это слово.",
+      "difficulty": "A2",
+      "tags": [
+        "verbs"
+      ]
+    },
+    {
+      "id": "l23-p2",
+      "spanish": "Arregla tu cara",
+      "translation": "Приведи лицо в порядок",
+      "example": "Arregla tu cara.",
+      "exampleTranslation": "Не хмурься / приведи лицо в порядок.",
+      "notes": "Говорят сердитому человеку.",
+      "difficulty": "A2",
+      "tags": [
+        "idioms"
+      ]
+    }
+  ]
+}

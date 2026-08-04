@@ -1,0 +1,54 @@
+{
+  "lesson": 1,
+  "title": "Me cuentas",
+  "category": "Social Worker",
+  "difficulty": "A1",
+  "tags": [
+    "pronouns",
+    "daily life",
+    "annoying combos"
+  ],
+  "intro": "Самые надоевшие сочетания, часть 1. Сочетания с предлогом-местоимением в начале фразы. В русском мы ставим «мне» после глагола («расскажешь мне»), а испанцы говорят «мне расскажешь».",
+  "authorComment": "Чтобы их понимать и использовать, надо поменять свою привычку говорить: местоимение уходит в начало.",
+  "phrases": [
+    {
+      "id": "l1-p1",
+      "spanish": "Me cuentas",
+      "translation": "Расскажешь мне",
+      "example": "Lo haces y me cuentas.",
+      "exampleTranslation": "Сходишь и потом мне расскажешь.",
+      "notes": "Соцработник говорит вам сходить куда-то и закончит фразу так.",
+      "difficulty": "A1",
+      "tags": [
+        "pronouns",
+        "daily life"
+      ]
+    },
+    {
+      "id": "l1-p2",
+      "spanish": "Me llamas",
+      "translation": "Позвони мне",
+      "example": "Me llamas.",
+      "exampleTranslation": "Позвони мне.",
+      "notes": "Подруга может написать так в WhatsApp.",
+      "difficulty": "A1",
+      "tags": [
+        "pronouns",
+        "phone"
+      ]
+    },
+    {
+      "id": "l1-p3",
+      "spanish": "Ya",
+      "translation": "Всё / готово",
+      "example": "¡Ya!",
+      "exampleTranslation": "Всё, готово!",
+      "notes": "Говорится, когда сделано какое-то действие: вышла из ванной и говорю «Ya» — она свободна.",
+      "difficulty": "A1",
+      "tags": [
+        "interjection",
+        "daily life"
+      ]
+    }
+  ]
+}

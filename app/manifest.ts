@@ -1,0 +1,19 @@
+import type { MetadataRoute } from 'next'
+
+export const dynamic = 'force-static'
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Español Real — Learn Real Spanish Spoken in Spain',
+    short_name: 'Español Real',
+    description: 'Master real-life Spanish phrases used in Spain.',
+    start_url: '/learn',
+    display: 'standalone',
+    background_color: '#fdfbf5',
+    theme_color: '#e0562e',
+    icons: [
+      { src: '/icon.svg', sizes: 'any', type: 'image/svg+xml' },
+      { src: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  }
+}

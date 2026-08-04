@@ -1,0 +1,76 @@
+{
+  "lesson": 21,
+  "title": "Ya / no funciona / voy a",
+  "category": "Transport",
+  "difficulty": "A2",
+  "tags": [
+    "annoying combos",
+    "verbs",
+    "daily life"
+  ],
+  "intro": "Самые надоевшие сочетания, часть 2.",
+  "authorComment": "«Ya» встречается даже чаще, чем «esta».",
+  "phrases": [
+    {
+      "id": "l21-p1",
+      "spanish": "¡Ya llegamos!",
+      "translation": "Мы уже приехали!",
+      "example": "¡Ya llegamos!",
+      "exampleTranslation": "Мы уже почти на месте!",
+      "notes": "Классика в дороге.",
+      "difficulty": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "l21-p2",
+      "spanish": "Ya he terminado",
+      "translation": "Я уже закончил",
+      "example": "Ya he terminado.",
+      "exampleTranslation": "Я уже закончил.",
+      "notes": "Ответ, если просят что-то сделать.",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l21-p3",
+      "spanish": "Ya tengo hambre",
+      "translation": "Я уже проголодался",
+      "example": "Ya tengo hambre.",
+      "exampleTranslation": "Я уже проголодался.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l21-p4",
+      "spanish": "No funciona",
+      "translation": "Не работает",
+      "example": "El ascensor no funciona.",
+      "exampleTranslation": "Лифт не работает.",
+      "notes": "No funciona como es — работает не так, как надо.",
+      "difficulty": "A2",
+      "tags": [
+        "daily life"
+      ]
+    },
+    {
+      "id": "l21-p5",
+      "spanish": "Voy a...",
+      "translation": "Я собираюсь / иду...",
+      "example": "Voy a comer.",
+      "exampleTranslation": "Я собираюсь поесть.",
+      "notes": "База для будущего действия.",
+      "difficulty": "A1",
+      "tags": [
+        "verbs",
+        "future"
+      ]
+    }
+  ]
+}

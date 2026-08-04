@@ -1,0 +1,51 @@
+{
+  "lesson": 14,
+  "title": "Primero / vez / quedar",
+  "category": "Restaurant",
+  "difficulty": "A2",
+  "tags": [
+    "time",
+    "meeting",
+    "verbs"
+  ],
+  "intro": "Первый и другой раз, а также очень полезный глагол quedar.",
+  "authorComment": "Quedar — договориться встретиться, задержаться, остаться.",
+  "phrases": [
+    {
+      "id": "l14-p1",
+      "spanish": "Primera vez",
+      "translation": "Первый раз",
+      "example": "Es la primera vez.",
+      "exampleTranslation": "Это первый раз.",
+      "notes": "Otra vez — ещё раз.",
+      "difficulty": "A1",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "l14-p2",
+      "spanish": "Quedar",
+      "translation": "Остаться / договориться встретиться",
+      "example": "¿Podemos quedar en un café?",
+      "exampleTranslation": "Можем посидеть в кафе?",
+      "notes": "Queda conmigo — побудь со мной.",
+      "difficulty": "A2",
+      "tags": [
+        "meeting"
+      ]
+    },
+    {
+      "id": "l14-p3",
+      "spanish": "Hoy no puedo quedar",
+      "translation": "Сегодня не могу задержаться",
+      "example": "Hoy no puedo quedar.",
+      "exampleTranslation": "Сегодня не могу встретиться / задержаться.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "meeting"
+      ]
+    }
+  ]
+}

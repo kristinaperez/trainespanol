@@ -1,0 +1,39 @@
+{
+  "lesson": 44,
+  "title": "Nos sigue faltando / recuperar",
+  "category": "Government",
+  "difficulty": "B1",
+  "tags": [
+    "documents",
+    "verbs",
+    "government"
+  ],
+  "intro": "Модель «нам всё ещё не хватает» и «вернуть».",
+  "authorComment": "Этой модели речи в русском нет, поэтому её сложно перевести напрямую.",
+  "phrases": [
+    {
+      "id": "l44-p1",
+      "spanish": "Nos sigue faltando un papel",
+      "translation": "Нам всё ещё не хватает одного документа",
+      "example": "Nos sigue faltando un papel.",
+      "exampleTranslation": "Нам так и не хватает одной бумаги.",
+      "notes": "Моника написала так.",
+      "difficulty": "B1",
+      "tags": [
+        "documents"
+      ]
+    },
+    {
+      "id": "l44-p2",
+      "spanish": "¿Recuperaste la llave?",
+      "translation": "Ты вернула ключ?",
+      "example": "¿Recuperaste la llave?",
+      "exampleTranslation": "Ты забрала ключ обратно?",
+      "notes": "Валерия спросила про ключи.",
+      "difficulty": "B1",
+      "tags": [
+        "housing"
+      ]
+    }
+  ]
+}

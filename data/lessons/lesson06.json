@@ -1,0 +1,38 @@
+{
+  "lesson": 6,
+  "title": "Dejalo / Apagalo",
+  "category": "Daily Life",
+  "difficulty": "A1",
+  "tags": [
+    "commands",
+    "verbs"
+  ],
+  "intro": "Повелительные фразы, которые слышишь дома и на собраниях.",
+  "authorComment": "Короткие команды с местоимением на конце.",
+  "phrases": [
+    {
+      "id": "l6-p1",
+      "spanish": "Déjalo",
+      "translation": "Оставь это",
+      "example": "Deja tu móvil.",
+      "exampleTranslation": "Отложи телефон.",
+      "notes": "На собрании попросили отложить телефон.",
+      "difficulty": "A1",
+      "tags": [
+        "commands"
+      ]
+    },
+    {
+      "id": "l6-p2",
+      "spanish": "Apágalo",
+      "translation": "Выключи его",
+      "example": "Apágalo.",
+      "exampleTranslation": "Выключи его!",
+      "notes": "Мама говорит ребёнку про телевизор.",
+      "difficulty": "A1",
+      "tags": [
+        "commands"
+      ]
+    }
+  ]
+}

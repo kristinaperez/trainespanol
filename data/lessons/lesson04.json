@@ -1,0 +1,64 @@
+{
+  "lesson": 4,
+  "title": "Parece — кажется",
+  "category": "Social Worker",
+  "difficulty": "A1",
+  "tags": [
+    "opinion",
+    "verbs"
+  ],
+  "intro": "Parece используется сразу во фразе, чтобы оценить услышанное или дать одобрение.",
+  "authorComment": "Отличный способ выразить своё мнение и одобрение.",
+  "phrases": [
+    {
+      "id": "l4-p1",
+      "spanish": "Me parece bien",
+      "translation": "Мне кажется, хорошо",
+      "example": "Me parece bien.",
+      "exampleTranslation": "По-моему, это хорошо.",
+      "notes": "Оценить то, что вам рассказали, или дать одобрение.",
+      "difficulty": "A1",
+      "tags": [
+        "opinion"
+      ]
+    },
+    {
+      "id": "l4-p2",
+      "spanish": "¿Te parece bien?",
+      "translation": "Ты одобряешь?",
+      "example": "¿Te parece bien?",
+      "exampleTranslation": "Ты не против / одобряешь?",
+      "notes": "",
+      "difficulty": "A1",
+      "tags": [
+        "opinion",
+        "questions"
+      ]
+    },
+    {
+      "id": "l4-p3",
+      "spanish": "¿Qué te parece?",
+      "translation": "Как тебе?",
+      "example": "¿Qué te parece?",
+      "exampleTranslation": "Как тебе такое?",
+      "notes": "",
+      "difficulty": "A1",
+      "tags": [
+        "opinion",
+        "questions"
+      ]
+    },
+    {
+      "id": "l4-p4",
+      "spanish": "Te pareces a tu hermano",
+      "translation": "Ты похож(а) на брата",
+      "example": "Te pareces a tu hermano.",
+      "exampleTranslation": "Ты похож на своего брата.",
+      "notes": "Parecido — похожий: dos idiomas parecidos.",
+      "difficulty": "A2",
+      "tags": [
+        "describing"
+      ]
+    }
+  ]
+}

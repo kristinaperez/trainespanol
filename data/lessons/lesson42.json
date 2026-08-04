@@ -1,0 +1,26 @@
+{
+  "lesson": 42,
+  "title": "El calentador chupa mucho",
+  "category": "Housing",
+  "difficulty": "B1",
+  "tags": [
+    "housing",
+    "verbs"
+  ],
+  "intro": "Про нагреватель и расход газа.",
+  "authorComment": "Пропала горячая вода, Валерия запустила нагреватель.",
+  "phrases": [
+    {
+      "id": "l42-p1",
+      "spanish": "El calentador chupa mucho",
+      "translation": "Нагреватель много потребляет",
+      "example": "El calentador chupa mucho.",
+      "exampleTranslation": "Нагреватель потребляет много газа.",
+      "notes": "Нагреватель на газе.",
+      "difficulty": "B1",
+      "tags": [
+        "housing"
+      ]
+    }
+  ]
+}

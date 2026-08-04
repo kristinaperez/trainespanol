@@ -1,0 +1,38 @@
+{
+  "lesson": 31,
+  "title": "Me enseñas tus apuntes",
+  "category": "School",
+  "difficulty": "A2",
+  "tags": [
+    "school",
+    "pronouns"
+  ],
+  "intro": "Покажи мне свои заметки — снова Me в начале.",
+  "authorComment": "Раз Моника так использует — значит, это более употребимо, чем «muéstrame».",
+  "phrases": [
+    {
+      "id": "l31-p1",
+      "spanish": "Me enseñas tus apuntes",
+      "translation": "Покажи мне свои заметки",
+      "example": "¿Me enseñas tus apuntes?",
+      "exampleTranslation": "Покажешь мне свои конспекты?",
+      "notes": "Моника сказала мне так.",
+      "difficulty": "A2",
+      "tags": [
+        "school"
+      ]
+    },
+    {
+      "id": "l31-p2",
+      "spanish": "Muéstrame",
+      "translation": "Покажи мне",
+      "example": "Muéstrame cómo.",
+      "exampleTranslation": "Покажи мне как.",
+      "notes": "Раньше говорила так, но «me enseñas» употребимее.",
+      "difficulty": "A2",
+      "tags": [
+        "pronouns"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "lesson": 18,
+  "title": "A ver / semana que viene",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "fillers",
+    "time"
+  ],
+  "intro": "Слово-паразит «a ver» и как говорить про недели.",
+  "authorComment": "Полезнее — «¡ve!» (смотри).",
+  "phrases": [
+    {
+      "id": "l18-p1",
+      "spanish": "A ver",
+      "translation": "Давай посмотрим",
+      "example": "A ver.",
+      "exampleTranslation": "Ну-ка, давай посмотрим.",
+      "notes": "Слово-паразит.",
+      "difficulty": "A2",
+      "tags": [
+        "fillers"
+      ]
+    },
+    {
+      "id": "l18-p2",
+      "spanish": "Semana que viene",
+      "translation": "Будущая неделя",
+      "example": "La semana que viene.",
+      "exampleTranslation": "На следующей неделе.",
+      "notes": "Можно сказать «la próxima semana».",
+      "difficulty": "A2",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "l18-p3",
+      "spanish": "Semana pasada",
+      "translation": "Прошедшая неделя",
+      "example": "La semana pasada.",
+      "exampleTranslation": "На прошлой неделе.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "time"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "lesson": 33,
+  "title": "Tirar / meter / estirar",
+  "category": "Work",
+  "difficulty": "B1",
+  "tags": [
+    "work",
+    "verbs",
+    "chores"
+  ],
+  "intro": "Слова-пары: poner/quitar, meter/sacar, tirar/meter.",
+  "authorComment": "В рабочем дне горничной это звучит чаще всего.",
+  "phrases": [
+    {
+      "id": "l33-p1",
+      "spanish": "Tirar",
+      "translation": "Натягивать (пододеяльник)",
+      "example": "Primero lo tiras.",
+      "exampleTranslation": "Сначала натягиваешь.",
+      "notes": "В контексте застилания постели.",
+      "difficulty": "B1",
+      "tags": [
+        "chores"
+      ]
+    },
+    {
+      "id": "l33-p2",
+      "spanish": "Meter",
+      "translation": "Подворачивать / засовывать",
+      "example": "Y pues lo metes.",
+      "exampleTranslation": "И потом подворачиваешь под матрас.",
+      "notes": "",
+      "difficulty": "B1",
+      "tags": [
+        "chores"
+      ]
+    },
+    {
+      "id": "l33-p3",
+      "spanish": "Estirar",
+      "translation": "Разглаживать / потягиваться",
+      "example": "Estirar la sábana.",
+      "exampleTranslation": "Разгладить простыню.",
+      "notes": "Тот же глагол, когда потягиваешься.",
+      "difficulty": "B1",
+      "tags": [
+        "chores"
+      ]
+    }
+  ]
+}

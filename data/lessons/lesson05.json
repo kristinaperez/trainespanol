@@ -1,0 +1,54 @@
+{
+  "lesson": 5,
+  "title": "Выражения с se (безличные)",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "grammar",
+    "impersonal",
+    "se"
+  ],
+  "intro": "Безличные конструкции и возвратные глаголы с se.",
+  "authorComment": "Se — маленькое слово с большим значением.",
+  "phrases": [
+    {
+      "id": "l5-p1",
+      "spanish": "Ella se va",
+      "translation": "Она ушла (покинула дом)",
+      "example": "Ella se va.",
+      "exampleTranslation": "Она уходит / ушла.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "se",
+        "movement"
+      ]
+    },
+    {
+      "id": "l5-p2",
+      "spanish": "Se marcha",
+      "translation": "Они уходят / маршируют",
+      "example": "Se marcha.",
+      "exampleTranslation": "Уходят или идут (маршируют) на празднике.",
+      "notes": "",
+      "difficulty": "A2",
+      "tags": [
+        "se",
+        "movement"
+      ]
+    },
+    {
+      "id": "l5-p3",
+      "spanish": "El idioma se aprende",
+      "translation": "Язык учится",
+      "example": "El idioma se aprende.",
+      "exampleTranslation": "Язык учится (сам).",
+      "notes": "Безличная конструкция.",
+      "difficulty": "A2",
+      "tags": [
+        "se",
+        "impersonal"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "lesson": 39,
+  "title": "Tristemente",
+  "category": "Daily Life",
+  "difficulty": "A2",
+  "tags": [
+    "adverbs",
+    "opinion"
+  ],
+  "intro": "Наречие «грустно», когда что-то не нравится.",
+  "authorComment": "Валерия говорит так, когда ей что-то не по душе.",
+  "phrases": [
+    {
+      "id": "l39-p1",
+      "spanish": "Tristemente",
+      "translation": "Печально / к сожалению",
+      "example": "Tristemente, es así.",
+      "exampleTranslation": "К сожалению, это так.",
+      "notes": "Грустно думать / жаль, что так.",
+      "difficulty": "A2",
+      "tags": [
+        "adverbs"
+      ]
+    }
+  ]
+}
