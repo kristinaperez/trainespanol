@@ -41,9 +41,8 @@ export interface ProgressState {
   // achievements
   achievements: string[]
   finalExamPassed: boolean
-  // monetization
+  // trial tracking
   trialStartDate: string | null
-  premiumKey: string | null
   // settings
   heartsEnabled: boolean
   theme: "light" | "dark" | "system"
@@ -72,7 +71,6 @@ const DEFAULT_STATE: ProgressState = {
   achievements: [],
   finalExamPassed: false,
   trialStartDate: null,
-  premiumKey: null,
   heartsEnabled: false,
   theme: "system",
   hearts: 5,
@@ -162,7 +160,8 @@ export function getDefaultProgressState(): ProgressState {
 
 export function replaceProgressState(nextState: ProgressState) {
   ensureLoaded()
-  state = { ...DEFAULT_STATE, ...nextState, premiumKey: null }
+  const { premiumKey: _legacyPremiumKey, ...safeState } = nextState as ProgressState & { premiumKey?: string | null }
+  state = { ...DEFAULT_STATE, ...safeState }
   persist()
   listeners.forEach((listener) => listener())
 }
@@ -360,17 +359,6 @@ export const progressActions = {
     })
   },
 
-  activatePremium(key: string): boolean {
-    const valid = /^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key.trim().toUpperCase())
-    if (valid) {
-      set((s) => {
-        s.premiumKey = key.trim().toUpperCase()
-        return s
-      })
-    }
-    return valid
-  },
-
   unlockAchievements(ids: string[]) {
     if (!ids.length) return
     set((s) => {
@@ -423,10 +411,7 @@ export function evaluateAchievements(s: ProgressState): string[] {
   return unlocked
 }
 
-// ---------- premium / access ----------
-export function isPremium(hasFullAccess: boolean): boolean {
-  return hasFullAccess
-}
+// ---------- access ----------
 export function isLessonLocked(lesson: number, trialLessons: number, hasFullAccess: boolean): boolean {
   return !hasFullAccess && lesson > trialLessons
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
   useProgress,
   progressActions,
@@ -133,12 +133,12 @@ export function SettingsView() {
           <div className="space-y-2">
             <Label>Дневная цель (XP)</Label>
             <div className="grid grid-cols-4 gap-2">
-              {DAILY_GOALS.map((g) => {
-                const active = s.dailyGoal === g.xp
+              {DAILY_GOALS.map((goal) => {
+                const active = s.dailyGoal === goal
                 return (
                   <button
-                    key={g.xp}
-                    onClick={() => progressActions.setDailyGoal(g.xp)}
+                    key={goal}
+                    onClick={() => progressActions.setDailyGoal(goal)}
                     className={`rounded-xl border-2 p-3 text-center transition-colors ${
                       active
                         ? "border-primary bg-primary/10 text-primary"
@@ -146,8 +146,8 @@ export function SettingsView() {
                     }`}
                     aria-pressed={active}
                   >
-                    <div className="font-heading text-lg font-extrabold">{g.xp}</div>
-                    <div className="text-xs">{g.label}</div>
+                    <div className="font-heading text-lg font-extrabold">{goal}</div>
+                    <div className="text-xs">XP</div>
                   </button>
                 )
               })}
@@ -209,9 +209,9 @@ export function SettingsView() {
           ) : (
             <div className="flex flex-col gap-4">
               <p className="text-sm leading-relaxed text-muted-foreground">Сначала войдите по email — покупка будет привязана к вашему аккаунту и сохранится на всех устройствах.</p>
-              <Button asChild>
-                <a href="/auth/login/"><LogIn className="mr-1.5 h-4 w-4" />Войти для покупки</a>
-              </Button>
+              <a href="/auth/login/" className="inline-flex h-8 items-center justify-center gap-1.5 rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">
+                <LogIn className="h-4 w-4" />Войти для покупки
+              </a>
             </div>
           )}
         </CardContent>
