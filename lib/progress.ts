@@ -41,9 +41,8 @@ export interface ProgressState {
   // achievements
   achievements: string[]
   finalExamPassed: boolean
-  // monetization
+  // trial tracking
   trialStartDate: string | null
-  premiumKey: string | null
   // settings
   heartsEnabled: boolean
   theme: "light" | "dark" | "system"
@@ -72,13 +71,58 @@ const DEFAULT_STATE: ProgressState = {
   achievements: [],
   finalExamPassed: false,
   trialStartDate: null,
-  premiumKey: null,
   heartsEnabled: false,
   theme: "system",
   hearts: 5,
   lastHeartLoss: null,
   studentName: "",
   completionDate: null,
+}
+
+function finiteNonNegative(value: unknown, fallback: number) {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : fallback
+}
+
+export function normalizeProgressState(value: unknown): ProgressState {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return { ...DEFAULT_STATE }
+  const input = value as Partial<ProgressState> & { premiumKey?: unknown }
+  const safeInput = { ...input }
+  delete safeInput.premiumKey
+  const theme = input.theme === "light" || input.theme === "dark" || input.theme === "system"
+    ? input.theme
+    : DEFAULT_STATE.theme
+
+  return {
+    ...DEFAULT_STATE,
+    ...safeInput,
+    xp: finiteNonNegative(input.xp, 0),
+    correctAnswers: finiteNonNegative(input.correctAnswers, 0),
+    wrongAnswers: finiteNonNegative(input.wrongAnswers, 0),
+    completedLessons: Array.isArray(input.completedLessons)
+      ? input.completedLessons.filter((item): item is number => Number.isInteger(item) && item > 0)
+      : [],
+    lessonScores: input.lessonScores && typeof input.lessonScores === "object" ? input.lessonScores : {},
+    learnedPhrases: Array.isArray(input.learnedPhrases)
+      ? input.learnedPhrases.filter((item): item is string => typeof item === "string")
+      : [],
+    reviewItems: input.reviewItems && typeof input.reviewItems === "object" ? input.reviewItems : {},
+    streakCurrent: finiteNonNegative(input.streakCurrent, 0),
+    streakLongest: finiteNonNegative(input.streakLongest, 0),
+    studyDays: Array.isArray(input.studyDays)
+      ? input.studyDays.filter((item): item is string => typeof item === "string")
+      : [],
+    dailyGoal: finiteNonNegative(input.dailyGoal, DEFAULT_STATE.dailyGoal),
+    dailyXp: finiteNonNegative(input.dailyXp, 0),
+    mistakesToday: finiteNonNegative(input.mistakesToday, 0),
+    achievements: Array.isArray(input.achievements)
+      ? input.achievements.filter((item): item is string => typeof item === "string")
+      : [],
+    finalExamPassed: input.finalExamPassed === true,
+    heartsEnabled: input.heartsEnabled === true,
+    theme,
+    hearts: finiteNonNegative(input.hearts, DEFAULT_STATE.hearts),
+    studentName: typeof input.studentName === "string" ? input.studentName.slice(0, 120) : "",
+  }
 }
 
 // ---------- date helpers ----------
@@ -105,7 +149,7 @@ function load(): ProgressState {
   if (typeof window === "undefined") return DEFAULT_STATE
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY)
-    if (raw) return { ...DEFAULT_STATE, ...JSON.parse(raw) }
+    if (raw) return normalizeProgressState(JSON.parse(raw))
   } catch {}
   return { ...DEFAULT_STATE }
 }
@@ -149,6 +193,22 @@ function getServerSnapshot(): ProgressState {
 
 export function useProgress(): ProgressState {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
+}
+
+export function getProgressState(): ProgressState {
+  ensureLoaded()
+  return { ...state }
+}
+
+export function getDefaultProgressState(): ProgressState {
+  return { ...DEFAULT_STATE }
+}
+
+export function replaceProgressState(nextState: ProgressState) {
+  ensureLoaded()
+  state = normalizeProgressState(nextState)
+  persist()
+  listeners.forEach((listener) => listener())
 }
 
 // ---------- derived selectors ----------
@@ -265,8 +325,9 @@ export const progressActions = {
         const next = item.intervalIndex + 1
         if (next >= SRS_INTERVALS.length) {
           // graduated — remove from queue
-          const { [phraseId]: _, ...rest } = s.reviewItems
-          s.reviewItems = rest
+          const nextItems = { ...s.reviewItems }
+          delete nextItems[phraseId]
+          s.reviewItems = nextItems
         } else {
           s.reviewItems = {
             ...s.reviewItems,
@@ -344,17 +405,6 @@ export const progressActions = {
     })
   },
 
-  activatePremium(key: string): boolean {
-    const valid = /^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key.trim().toUpperCase())
-    if (valid) {
-      set((s) => {
-        s.premiumKey = key.trim().toUpperCase()
-        return s
-      })
-    }
-    return valid
-  },
-
   unlockAchievements(ids: string[]) {
     if (!ids.length) return
     set((s) => {
@@ -407,11 +457,7 @@ export function evaluateAchievements(s: ProgressState): string[] {
   return unlocked
 }
 
-// ---------- premium / access ----------
-export function isPremium(s: ProgressState): boolean {
-  return !!s.premiumKey
-}
-export function isLessonLocked(s: ProgressState, lesson: number, trialLessons: number): boolean {
-  if (isPremium(s)) return false
-  return lesson > trialLessons
+// ---------- access ----------
+export function isLessonLocked(lesson: number, trialLessons: number, hasFullAccess: boolean): boolean {
+  return !hasFullAccess && lesson > trialLessons
 }

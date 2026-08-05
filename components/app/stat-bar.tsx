@@ -1,11 +1,13 @@
 "use client"
 
 import { Flame, Gem, Heart, Star } from "lucide-react"
-import { useProgress, selectLevel, selectDailyXp, isPremium } from "@/lib/progress"
+import { useProgress, selectLevel, selectDailyXp } from "@/lib/progress"
+import { useAccount } from "./account-provider"
 import { levelName, xpForNextLevel } from "@/lib/config"
 
 export function StatBar() {
   const s = useProgress()
+  const { hasFullAccess } = useAccount()
   const level = selectLevel(s)
   const { current, needed } = xpForNextLevel(s.xp)
   const dailyXp = selectDailyXp(s)
@@ -20,7 +22,7 @@ export function StatBar() {
         tone="muted"
         title={`${current}/${needed} XP до следующего уровня`}
       />
-      {s.heartsEnabled && !isPremium(s) && (
+      {s.heartsEnabled && !hasFullAccess && (
         <Stat icon={<Heart className="size-4 fill-current" />} label={`${s.hearts}`} tone="destructive" title="Жизни" />
       )}
       {dailyXp > 0 && (

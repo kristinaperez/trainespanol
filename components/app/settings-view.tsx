@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
   useProgress,
   progressActions,
-  isPremium,
 } from "@/lib/progress"
+import { useAccount } from "./account-provider"
+import { apiFetch } from "@/lib/api"
 import { DAILY_GOALS } from "@/lib/config"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -21,7 +22,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Sun, Moon, Monitor, Heart, Volume2, Crown, Trash2, KeyRound } from "lucide-react"
+import { Sun, Moon, Monitor, Heart, Volume2, Crown, Trash2, CreditCard, LogIn } from "lucide-react"
 
 const THEMES = [
   { value: "light", label: "Светлая", icon: Sun },
@@ -31,15 +32,36 @@ const THEMES = [
 
 export function SettingsView() {
   const s = useProgress()
-  const premium = isPremium(s)
+  const { session, hasFullAccess, account, refreshAccount } = useAccount()
   const [resetOpen, setResetOpen] = useState(false)
-  const [keyInput, setKeyInput] = useState("")
-  const [keyError, setKeyError] = useState(false)
+  const [checkoutLoading, setCheckoutLoading] = useState(false)
+  const [checkoutError, setCheckoutError] = useState(false)
 
-  function applyKey() {
-    const ok = progressActions.activatePremium(keyInput)
-    setKeyError(!ok)
-    if (ok) setKeyInput("")
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("payment") !== "success") return
+    const timer = window.setInterval(() => refreshAccount(), 1500)
+    const stop = window.setTimeout(() => window.clearInterval(timer), 12000)
+    refreshAccount()
+    return () => {
+      window.clearInterval(timer)
+      window.clearTimeout(stop)
+    }
+  }, [refreshAccount])
+
+  async function startCheckout() {
+    setCheckoutLoading(true)
+    setCheckoutError(false)
+    try {
+      const result = await apiFetch<{ url: string | null }>("/api/checkout", {
+        method: "POST",
+        body: JSON.stringify({ requestId: crypto.randomUUID() }),
+      })
+      if (!result.url) throw new Error("Checkout URL missing")
+      window.location.assign(result.url)
+    } catch {
+      setCheckoutError(true)
+      setCheckoutLoading(false)
+    }
   }
 
   return (
@@ -111,12 +133,12 @@ export function SettingsView() {
           <div className="space-y-2">
             <Label>Дневная цель (XP)</Label>
             <div className="grid grid-cols-4 gap-2">
-              {DAILY_GOALS.map((g) => {
-                const active = s.dailyGoal === g.xp
+              {DAILY_GOALS.map((goal) => {
+                const active = s.dailyGoal === goal
                 return (
                   <button
-                    key={g.xp}
-                    onClick={() => progressActions.setDailyGoal(g.xp)}
+                    key={goal}
+                    onClick={() => progressActions.setDailyGoal(goal)}
                     className={`rounded-xl border-2 p-3 text-center transition-colors ${
                       active
                         ? "border-primary bg-primary/10 text-primary"
@@ -124,8 +146,8 @@ export function SettingsView() {
                     }`}
                     aria-pressed={active}
                   >
-                    <div className="font-heading text-lg font-extrabold">{g.xp}</div>
-                    <div className="text-xs">{g.label}</div>
+                    <div className="font-heading text-lg font-extrabold">{goal}</div>
+                    <div className="text-xs">XP</div>
                   </button>
                 )
               })}
@@ -164,39 +186,33 @@ export function SettingsView() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          {premium ? (
+          {hasFullAccess ? (
             <div className="rounded-xl bg-secondary/10 p-4 text-secondary">
               <p className="font-semibold">Полный доступ активирован</p>
-              <p className="text-sm text-secondary/80">Ключ: {s.premiumKey}</p>
+              <p className="text-sm text-secondary/80">
+                Все 45 уроков доступны{account?.entitlement?.purchased_at ? ` · с ${new Date(account.entitlement.purchased_at).toLocaleDateString("ru-RU")}` : ""}.
+              </p>
+            </div>
+          ) : session ? (
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="text-2xl font-black text-foreground">49 €</p>
+                <p className="text-sm leading-relaxed text-muted-foreground">Разовая оплата картой. Пожизненный доступ ко всем 45 урокам для этого аккаунта.</p>
+              </div>
+              <Button onClick={startCheckout} disabled={checkoutLoading}>
+                <CreditCard className="mr-1.5 h-4 w-4" />
+                {checkoutLoading ? "Открываем оплату…" : "Оплатить полный курс"}
+              </Button>
+              {checkoutError && <p className="text-sm text-destructive">Не удалось открыть оплату. Попробуйте ещё раз.</p>}
+              <p className="text-xs text-muted-foreground">Оплата обрабатывается Stripe. Данные карты не попадают на сервер курса.</p>
             </div>
           ) : (
-            <>
-              <p className="text-sm text-muted-foreground">
-                Введите ключ активации, чтобы открыть все 45 уроков. Формат: XXXX-XXXX-XXXX.
-              </p>
-              <div className="flex items-end gap-2">
-                <div className="flex-1 space-y-2">
-                  <Label htmlFor="key">Ключ активации</Label>
-                  <Input
-                    id="key"
-                    placeholder="ABCD-1234-EFGH"
-                    value={keyInput}
-                    onChange={(e) => {
-                      setKeyInput(e.target.value.toUpperCase())
-                      setKeyError(false)
-                    }}
-                  />
-                </div>
-                <Button onClick={applyKey}>
-                  <KeyRound className="mr-1.5 h-4 w-4" />
-                  Активировать
-                </Button>
-              </div>
-              {keyError && <p className="text-sm text-destructive">Неверный формат ключа.</p>}
-              <p className="text-xs text-muted-foreground">
-                Демо-ключ для проверки: <span className="font-mono">HOLA-2024-REAL</span>
-              </p>
-            </>
+            <div className="flex flex-col gap-4">
+              <p className="text-sm leading-relaxed text-muted-foreground">Сначала войдите по email — покупка будет привязана к вашему аккаунту и сохранится на всех устройствах.</p>
+              <a href="/auth/login/" className="inline-flex h-8 items-center justify-center gap-1.5 rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">
+                <LogIn className="h-4 w-4" />Войти для покупки
+              </a>
+            </div>
           )}
         </CardContent>
       </Card>

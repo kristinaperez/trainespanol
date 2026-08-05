@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Check, Lock } from "lucide-react"
+import { Check } from "lucide-react"
 import { ADAPTATION_MAP } from "@/lib/config"
 import { useProgress } from "@/lib/progress"
 

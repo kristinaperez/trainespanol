@@ -1,13 +1,19 @@
+const isDevelopment = process.env.NODE_ENV === "development"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: isDevelopment ? undefined : "export",
   trailingSlash: true,
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     unoptimized: true,
   },
+  ...(isDevelopment
+    ? {
+        async rewrites() {
+          return [{ source: "/backend-api/:path*", destination: "http://localhost:3001/:path*" }]
+        },
+      }
+    : {}),
 }
 
 export default nextConfig

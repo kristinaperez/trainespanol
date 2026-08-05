@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { MapPin, Volume2, Repeat, Sparkles, Layers, ShieldCheck } from "lucide-react"
 import { SITE } from "@/lib/config"
 
@@ -92,10 +91,10 @@ export default function AboutPage() {
         <CardContent className="flex items-start gap-3 p-6">
           <ShieldCheck className="mt-0.5 h-6 w-6 shrink-0 text-secondary" />
           <div>
-            <h2 className="font-heading text-lg font-bold text-foreground">Ваш прогресс — только ваш</h2>
+            <h2 className="font-heading text-lg font-bold text-foreground">Ваш прогресс всегда с вами</h2>
             <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              Тренажёр работает полностью в браузере. Прогресс, XP и серии сохраняются локально на
-              вашем устройстве — регистрация не нужна, а данные никуда не отправляются.
+              Первые уроки доступны без регистрации. После входа по email прогресс, XP и серии
+              безопасно синхронизируются с вашим аккаунтом между устройствами.
             </p>
           </div>
         </CardContent>
@@ -108,9 +107,9 @@ export default function AboutPage() {
         <p className="max-w-md text-primary-foreground/80 text-pretty">
           Первые {SITE.trialLessons} уроков бесплатны. Полный курс из 45 уроков — {SITE.price}.
         </p>
-        <Button asChild size="lg" variant="secondary" className="mt-2 font-bold">
-          <Link href="/lessons">Начать учиться</Link>
-        </Button>
+        <Link href="/lessons" className="mt-2 inline-flex h-9 items-center justify-center rounded-lg bg-secondary px-3 font-bold text-secondary-foreground transition-colors hover:bg-secondary/80">
+          Начать учиться
+        </Link>
       </div>
     </div>
   )
