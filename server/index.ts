@@ -17,6 +17,9 @@ const COURSE_PRICE_CENTS = 4900
 if (!FRONTEND_URL || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !STRIPE_SECRET_KEY) {
   throw new Error("Missing required backend environment variables")
 }
+if (process.env.NODE_ENV === "production" && !STRIPE_WEBHOOK_SECRET) {
+  throw new Error("STRIPE_WEBHOOK_SECRET is required in production")
+}
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
   auth: { autoRefreshToken: false, persistSession: false },
@@ -82,16 +85,12 @@ app.post("/api/stripe/webhook", express.raw({ type: "application/json" }), async
       const charge = event.data.object
       const paymentIntentId = typeof charge.payment_intent === "string" ? charge.payment_intent : null
       if (paymentIntentId) {
-        const { error: eventError } = await supabase.from("stripe_events").insert({ event_id: event.id, event_type: event.type })
-        if (!eventError) {
-          const { error } = await supabase
-            .from("course_entitlements")
-            .update({ status: "refunded" })
-            .eq("stripe_payment_intent_id", paymentIntentId)
-          if (error) throw error
-        } else if (eventError.code !== "23505") {
-          throw eventError
-        }
+        const { error } = await supabase.rpc("refund_course_entitlement", {
+          p_event_id: event.id,
+          p_event_type: event.type,
+          p_payment_intent_id: paymentIntentId,
+        })
+        if (error) throw error
       }
     }
 

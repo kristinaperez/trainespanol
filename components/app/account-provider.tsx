@@ -110,6 +110,8 @@ export function AccountProvider({ children }: { children: React.ReactNode }) {
     refreshAccount: async () => mutate(),
     signOut: async () => {
       await supabase.auth.signOut()
+      replaceProgressState(getDefaultProgressState())
+      setHydratedUserId(null)
       setSession(null)
     },
   }

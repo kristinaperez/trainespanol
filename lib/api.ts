@@ -5,15 +5,13 @@ const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001").rep
 export async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const supabase = createClient()
   const { data: { session } } = await supabase.auth.getSession()
-  if (!session) throw new Error("AUTH_REQUIRED")
+  const headers = new Headers(init?.headers)
+  headers.set("Content-Type", "application/json")
+  if (session) headers.set("Authorization", `Bearer ${session.access_token}`)
 
   const response = await fetch(`${API_URL}${path}`, {
     ...init,
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${session.access_token}`,
-      ...init?.headers,
-    },
+    headers,
   })
 
   const body = await response.json().catch(() => ({}))

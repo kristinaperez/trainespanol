@@ -5,6 +5,7 @@ export const SITE = {
   name: "Español Real",
   tagline: "Learn Real Spanish Spoken in Spain",
   price: "49 €",
+  lessonCount: 45,
   trialLessons: 7,
   trialDays: 7,
 }

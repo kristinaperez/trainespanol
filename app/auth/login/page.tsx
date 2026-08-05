@@ -17,7 +17,9 @@ export default function LoginPage() {
     event.preventDefault()
     setStatus("sending")
     const supabase = createClient()
-    const redirectTo = process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL ?? `${window.location.origin}/auth/callback/`
+    const redirectTo = process.env.NODE_ENV === "development"
+      ? (process.env.NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL ?? `${window.location.origin}/auth/callback/`)
+      : `${window.location.origin}/auth/callback/`
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim(),
       options: { emailRedirectTo: redirectTo, shouldCreateUser: true },
