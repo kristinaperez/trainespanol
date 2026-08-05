@@ -86,13 +86,15 @@ function finiteNonNegative(value: unknown, fallback: number) {
 export function normalizeProgressState(value: unknown): ProgressState {
   if (!value || typeof value !== "object" || Array.isArray(value)) return { ...DEFAULT_STATE }
   const input = value as Partial<ProgressState> & { premiumKey?: unknown }
+  const safeInput = { ...input }
+  delete safeInput.premiumKey
   const theme = input.theme === "light" || input.theme === "dark" || input.theme === "system"
     ? input.theme
     : DEFAULT_STATE.theme
 
   return {
     ...DEFAULT_STATE,
-    ...input,
+    ...safeInput,
     xp: finiteNonNegative(input.xp, 0),
     correctAnswers: finiteNonNegative(input.correctAnswers, 0),
     wrongAnswers: finiteNonNegative(input.wrongAnswers, 0),
@@ -323,8 +325,9 @@ export const progressActions = {
         const next = item.intervalIndex + 1
         if (next >= SRS_INTERVALS.length) {
           // graduated — remove from queue
-          const { [phraseId]: _, ...rest } = s.reviewItems
-          s.reviewItems = rest
+          const nextItems = { ...s.reviewItems }
+          delete nextItems[phraseId]
+          s.reviewItems = nextItems
         } else {
           s.reviewItems = {
             ...s.reviewItems,

@@ -1,10 +1,11 @@
 import { createClient } from "@/lib/supabase/client"
 
-const API_URL = (
-  process.env.NODE_ENV === "development"
-    ? "/backend-api"
-    : process.env.NEXT_PUBLIC_API_URL
-).replace(/\/$/, "")
+const configuredApiUrl = process.env.NODE_ENV === "development"
+  ? "/backend-api"
+  : process.env.NEXT_PUBLIC_API_URL
+
+if (!configuredApiUrl) throw new Error("NEXT_PUBLIC_API_URL is required")
+const API_URL = configuredApiUrl.replace(/\/$/, "")
 
 export async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const supabase = createClient()

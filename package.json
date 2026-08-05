@@ -8,6 +8,8 @@
     "start": "next start",
     "dev:api": "tsx watch server/index.ts",
     "start:api": "tsx server/index.ts",
+    "admin:role": "tsx scripts/set-admin-role.ts",
+    "test": "tsx --test tests/**/*.test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ."
   },
@@ -40,6 +42,8 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.0",
     "postcss": "^8.5",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.8",
