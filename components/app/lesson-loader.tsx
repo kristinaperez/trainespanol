@@ -13,7 +13,12 @@ interface LessonPayload {
   nextLessonId: number | null
 }
 
-const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001").replace(/\/$/, "")
+const configuredApiUrl = process.env.NODE_ENV === "development"
+  ? "/backend-api"
+  : process.env.NEXT_PUBLIC_API_URL
+
+if (!configuredApiUrl) throw new Error("NEXT_PUBLIC_API_URL is required")
+const API_URL = configuredApiUrl.replace(/\/$/, "")
 
 async function loadLesson(id: number): Promise<LessonPayload> {
   const supabase = createClient()
