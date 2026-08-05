@@ -1,6 +1,10 @@
 import { createClient } from "@/lib/supabase/client"
 
-const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001").replace(/\/$/, "")
+const API_URL = (
+  process.env.NODE_ENV === "development"
+    ? "/backend-api"
+    : process.env.NEXT_PUBLIC_API_URL
+).replace(/\/$/, "")
 
 export async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const supabase = createClient()
