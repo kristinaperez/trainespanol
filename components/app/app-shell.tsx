@@ -8,13 +8,17 @@ import {
   BookOpen,
   Home,
   Info,
+  LogIn,
+  LogOut,
   Menu,
   Repeat,
   Settings,
+  ShieldCheck,
   TriangleAlert,
   X,
 } from "lucide-react"
 import { StatBar } from "./stat-bar"
+import { useAccount } from "./account-provider"
 import { useProgress, selectDueReviews } from "@/lib/progress"
 
 const NAV = [
@@ -31,6 +35,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const s = useProgress()
+  const { session, isAdmin, signOut } = useAccount()
   const dueCount = selectDueReviews(s).length
 
   const NavLinks = ({ onNavigate }: { onNavigate?: () => void }) => (
@@ -71,8 +76,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <span className="text-lg">Español Real</span>
         </Link>
         <NavLinks />
-        <div className="mt-auto rounded-2xl bg-sidebar-accent p-3 text-xs text-sidebar-accent-foreground">
-          Прогресс сохраняется в этом браузере автоматически.
+        <div className="mt-auto flex flex-col gap-2">
+          {isAdmin && (
+            <Link href="/admin" className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-sidebar-foreground hover:bg-sidebar-accent">
+              <ShieldCheck className="size-4" /> Ученики
+            </Link>
+          )}
+          {session ? (
+            <button type="button" onClick={() => signOut()} className="flex items-center gap-2 rounded-xl px-3 py-2 text-left text-sm font-bold text-sidebar-foreground hover:bg-sidebar-accent">
+              <LogOut className="size-4" /> Выйти
+            </button>
+          ) : (
+            <Link href="/auth/login" className="flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-black text-primary-foreground">
+              <LogIn className="size-4" /> Войти по email
+            </Link>
+          )}
+          <div className="rounded-2xl bg-sidebar-accent p-3 text-xs text-sidebar-accent-foreground">
+            {session ? "Прогресс синхронизируется с аккаунтом." : "Гостевой прогресс хранится в этом браузере."}
+          </div>
         </div>
       </aside>
 

@@ -5,10 +5,12 @@ import { useMemo, useState } from "react"
 import { Check, Lock, Search, Star } from "lucide-react"
 import type { LessonMeta } from "@/lib/types"
 import { useProgress, isLessonLocked } from "@/lib/progress"
+import { useAccount } from "./account-provider"
 import { SITE, CATEGORY_LABELS_RU } from "@/lib/config"
 
 export function LessonsListView({ lessons }: { lessons: LessonMeta[] }) {
   const s = useProgress()
+  const { hasFullAccess } = useAccount()
   const [query, setQuery] = useState("")
   const [difficulty, setDifficulty] = useState<string>("all")
 
@@ -77,7 +79,7 @@ export function LessonsListView({ lessons }: { lessons: LessonMeta[] }) {
       ) : (
         <div className="grid gap-3 sm:grid-cols-2">
           {filtered.map((l) => {
-            const locked = isLessonLocked(s, l.lesson, SITE.trialLessons)
+            const locked = isLessonLocked(l.lesson, SITE.trialLessons, hasFullAccess)
             const done = s.completedLessons.includes(l.lesson)
             const score = s.lessonScores[l.lesson]
             return (

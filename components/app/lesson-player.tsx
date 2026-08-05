@@ -4,8 +4,8 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useEffect, useMemo, useRef, useState } from "react"
 import confetti from "canvas-confetti"
-import { ArrowLeft, ArrowRight, BookOpen, Home, Lock, Trophy, X, Zap } from "lucide-react"
-import type { Lesson, LessonMeta } from "@/lib/types"
+import { ArrowLeft, ArrowRight, BookOpen, Home, Trophy, X, Zap } from "lucide-react"
+import type { Lesson } from "@/lib/types"
 import { buildLessonExercises } from "@/lib/exercises"
 import { speakSpanish } from "@/lib/speak"
 import { ExerciseCard } from "./exercise-card"
@@ -14,9 +14,8 @@ import {
   useProgress,
   progressActions,
   evaluateAchievements,
-  isLessonLocked,
 } from "@/lib/progress"
-import { XP, SITE, MOTIVATION, comboMultiplier, ACHIEVEMENTS, isExamLesson } from "@/lib/config"
+import { XP, MOTIVATION, comboMultiplier, ACHIEVEMENTS, isExamLesson } from "@/lib/config"
 
 type Stage = "intro" | "play" | "result"
 
@@ -45,8 +44,6 @@ export function LessonPlayer({
     [lesson, distractors],
   )
   const practiceTotal = exercises.filter((e) => e.type !== "flashcard").length
-
-  const locked = isLessonLocked(s, lesson.lesson, SITE.trialLessons)
 
   useEffect(() => {
     if (stage === "play") progressActions.markStudiedToday()
@@ -113,32 +110,6 @@ export function LessonPlayer({
     setTimeout(() => {
       confetti({ particleCount: 120, spread: 75, origin: { y: 0.6 }, colors: ["#d64545", "#e8b24a", "#4fa870"] })
     }, 150)
-  }
-
-  // ----- Locked screen -----
-  if (locked) {
-    return (
-      <div className="mx-auto max-w-md py-16 text-center">
-        <div className="mx-auto grid size-16 place-items-center rounded-3xl bg-muted text-muted-foreground">
-          <Lock className="size-8" />
-        </div>
-        <h1 className="mt-5 text-2xl font-black text-foreground">Урок {lesson.lesson} закрыт</h1>
-        <p className="mt-2 text-muted-foreground">
-          Первые {SITE.trialLessons} уроков бесплатны. Открой полный доступ за {SITE.price}, чтобы продолжить.
-        </p>
-        <div className="mt-6 flex flex-col gap-3">
-          <Link
-            href="/settings"
-            className="rounded-2xl bg-primary py-3.5 font-black text-primary-foreground transition hover:brightness-105"
-          >
-            Открыть полный доступ
-          </Link>
-          <Link href="/lessons" className="rounded-2xl border-2 border-border py-3.5 font-black text-foreground">
-            Назад к урокам
-          </Link>
-        </div>
-      </div>
-    )
   }
 
   // ----- Intro -----

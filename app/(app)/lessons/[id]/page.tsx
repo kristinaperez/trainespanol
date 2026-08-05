@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { LessonPlayer } from "@/components/app/lesson-player"
+import { LessonLoader } from "@/components/app/lesson-loader"
 import { getAllLessons, getLesson } from "@/lib/lessons"
 
 export function generateStaticParams() {
@@ -27,15 +27,5 @@ export default async function LessonPage({ params }: { params: Promise<{ id: str
   const lesson = getLesson(lessonId)
   if (!lesson) notFound()
 
-  const all = getAllLessons()
-
-  // Distractor pool: this lesson's phrases + neighbours, for plausible wrong options.
-  const distractors = all
-    .filter((l) => Math.abs(l.lesson - lessonId) <= 3)
-    .flatMap((l) => l.phrases)
-
-  const idx = all.findIndex((l) => l.lesson === lessonId)
-  const nextLessonId = idx >= 0 && idx < all.length - 1 ? all[idx + 1].lesson : null
-
-  return <LessonPlayer lesson={lesson} distractors={distractors} nextLessonId={nextLessonId} />
+  return <LessonLoader lessonId={lessonId} />
 }

@@ -151,6 +151,22 @@ export function useProgress(): ProgressState {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 }
 
+export function getProgressState(): ProgressState {
+  ensureLoaded()
+  return { ...state }
+}
+
+export function getDefaultProgressState(): ProgressState {
+  return { ...DEFAULT_STATE }
+}
+
+export function replaceProgressState(nextState: ProgressState) {
+  ensureLoaded()
+  state = { ...DEFAULT_STATE, ...nextState, premiumKey: null }
+  persist()
+  listeners.forEach((listener) => listener())
+}
+
 // ---------- derived selectors ----------
 export function selectLevel(s: ProgressState) {
   return levelFromXp(s.xp)
@@ -408,10 +424,9 @@ export function evaluateAchievements(s: ProgressState): string[] {
 }
 
 // ---------- premium / access ----------
-export function isPremium(s: ProgressState): boolean {
-  return !!s.premiumKey
+export function isPremium(hasFullAccess: boolean): boolean {
+  return hasFullAccess
 }
-export function isLessonLocked(s: ProgressState, lesson: number, trialLessons: number): boolean {
-  if (isPremium(s)) return false
-  return lesson > trialLessons
+export function isLessonLocked(lesson: number, trialLessons: number, hasFullAccess: boolean): boolean {
+  return !hasFullAccess && lesson > trialLessons
 }
